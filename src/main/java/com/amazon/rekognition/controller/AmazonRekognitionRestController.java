@@ -18,7 +18,7 @@ public class AmazonRekognitionRestController {
     }
 
     @PostMapping(value = "/draw-bounding-boxes", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
-    public ResponseEntity<byte[]> detectFaces(@RequestParam("image") MultipartFile file) {
+    public ResponseEntity<byte[]> drawBoundingBoxes(@RequestParam("image") MultipartFile file) {
         return ResponseEntity.ok(amazonRekognitionService.detectFaces(file));
     }
 }
