@@ -29,7 +29,7 @@ public class AmazonRekognitionServiceImpl implements AmazonRekognitionService {
     }
 
     @Override
-    public byte[] detectFaces(MultipartFile multipartFile){
+    public byte[] drawBoundingBox(MultipartFile multipartFile){
         ByteBuffer imageBytes = null;
 
         try(InputStream inputStream = new ByteArrayInputStream(multipartFile.getBytes())){

@@ -5,5 +5,5 @@ import org.springframework.web.multipart.MultipartFile;
 
 @Service
 public interface AmazonRekognitionService {
-    byte[] detectFaces(MultipartFile multipartFile);
+    byte[] drawBoundingBox(MultipartFile multipartFile);
 }
